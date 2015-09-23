@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="JYA-a9-bkE">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="8092"/>
+    </dependencies>
+    <scenes>
+        <!--Watch Connectivity-->
+        <scene sceneID="fTC-sZ-bBi">
+            <objects>
+                <controller title="Watch Connectivity" id="JYA-a9-bkE" customClass="InterfaceController" customModule="WatchConnectivitySampleSwift_WatchKit_App_Extension">
+                    <items>
+                        <button width="1" alignment="left" title="Send Message" id="hYX-VL-MuA">
+                            <connections>
+                                <action selector="sendMessageButtonTapped" destination="JYA-a9-bkE" id="wJx-nK-Aue"/>
+                            </connections>
+                        </button>
+                        <label width="1" alignment="left" text="Received:" numberOfLines="0" id="LoC-f9-Vkk"/>
+                    </items>
+                    <connections>
+                        <outlet property="resultLabel" destination="LoC-f9-Vkk" id="puL-YV-53I"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="7Ar-pF-kMl">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="VwK-xx-0xg">
+            <objects>
+                <viewController id="7Ar-pF-kMl" customClass="ViewController" customModule="WatchConnectivitySampleSwift" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wPt-th-RqH"/>
+                        <viewControllerLayoutGuide type="bottom" id="AnG-wF-f9k"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AI3-II-mdn">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PKP-kM-eoX">
+                                <rect key="frame" x="20" y="20" width="560" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Slt-n7-Uij"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Application Context"/>
+                                <connections>
+                                    <action selector="applicationContextButtonTapped" destination="7Ar-pF-kMl" eventType="touchUpInside" id="z3c-Ne-F1B"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uKo-KI-smz" userLabel="User Info Transfer">
+                                <rect key="frame" x="20" y="64" width="560" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="M7o-t4-9QS"/>
+                                </constraints>
+                                <state key="normal" title="User Info Transfer"/>
+                                <connections>
+                                    <action selector="userInfoTransferButtonTapped" destination="7Ar-pF-kMl" eventType="touchUpInside" id="L7G-6I-2zr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SAJ-uI-7RO">
+                                <rect key="frame" x="20" y="110" width="560" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Bpm-xA-dhC"/>
+                                </constraints>
+                                <state key="normal" title="File Transfer"/>
+                                <connections>
+                                    <action selector="fileTransferButtonTapped" destination="7Ar-pF-kMl" eventType="touchUpInside" id="uj1-xe-Nod"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Result" translatesAutoresizingMaskIntoConstraints="NO" id="W1b-I7-SBf">
+                                <rect key="frame" x="20" y="198" width="560" height="402"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xGR-Ze-aIN">
+                                <rect key="frame" x="20" y="154" width="560" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="4V4-8X-82e"/>
+                                </constraints>
+                                <state key="normal" title="Interactive Message"/>
+                                <connections>
+                                    <action selector="interactiveMessageButtonTapped" destination="7Ar-pF-kMl" eventType="touchUpInside" id="UAb-MI-mVX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SAJ-uI-7RO" firstAttribute="trailing" secondItem="AI3-II-mdn" secondAttribute="trailingMargin" id="7Sj-Ns-osF"/>
+                            <constraint firstItem="W1b-I7-SBf" firstAttribute="leading" secondItem="AI3-II-mdn" secondAttribute="leadingMargin" id="GHo-Y8-yIj"/>
+                            <constraint firstItem="xGR-Ze-aIN" firstAttribute="leading" secondItem="AI3-II-mdn" secondAttribute="leadingMargin" id="Mjx-RF-aU1"/>
+                            <constraint firstItem="xGR-Ze-aIN" firstAttribute="top" secondItem="SAJ-uI-7RO" secondAttribute="bottom" id="Qdq-AW-HAz"/>
+                            <constraint firstItem="AnG-wF-f9k" firstAttribute="top" secondItem="W1b-I7-SBf" secondAttribute="bottom" id="RSF-ff-8rX"/>
+                            <constraint firstItem="SAJ-uI-7RO" firstAttribute="top" secondItem="uKo-KI-smz" secondAttribute="bottom" constant="2" id="TIQ-VH-akv"/>
+                            <constraint firstItem="SAJ-uI-7RO" firstAttribute="leading" secondItem="AI3-II-mdn" secondAttribute="leadingMargin" id="ZPe-Ag-eFK"/>
+                            <constraint firstItem="W1b-I7-SBf" firstAttribute="trailing" secondItem="AI3-II-mdn" secondAttribute="trailingMargin" id="eO3-Zt-d8g"/>
+                            <constraint firstItem="xGR-Ze-aIN" firstAttribute="trailing" secondItem="AI3-II-mdn" secondAttribute="trailingMargin" id="eOu-8t-SDc"/>
+                            <constraint firstItem="uKo-KI-smz" firstAttribute="top" secondItem="PKP-kM-eoX" secondAttribute="bottom" id="hHv-Ym-jK0"/>
+                            <constraint firstItem="PKP-kM-eoX" firstAttribute="leading" secondItem="AI3-II-mdn" secondAttribute="leadingMargin" id="i1I-3Q-vjI"/>
+                            <constraint firstItem="PKP-kM-eoX" firstAttribute="top" secondItem="wPt-th-RqH" secondAttribute="bottom" id="iwz-ej-oEX"/>
+                            <constraint firstItem="uKo-KI-smz" firstAttribute="leading" secondItem="AI3-II-mdn" secondAttribute="leadingMargin" id="oJJ-G3-kCO"/>
+                            <constraint firstItem="uKo-KI-smz" firstAttribute="trailing" secondItem="AI3-II-mdn" secondAttribute="trailingMargin" id="sak-Sz-4xg"/>
+                            <constraint firstItem="W1b-I7-SBf" firstAttribute="top" secondItem="xGR-Ze-aIN" secondAttribute="bottom" id="sdJ-T1-DzZ"/>
+                            <constraint firstItem="PKP-kM-eoX" firstAttribute="trailing" secondItem="AI3-II-mdn" secondAttribute="trailingMargin" id="uzb-Xj-Xri"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="resultTextView" destination="W1b-I7-SBf" id="WK8-fS-oNZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OsN-l6-Fd0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="269" y="366"/>
+        </scene>
+    </scenes>
+</document>
