@@ -35,6 +35,7 @@
 		42851F3C1BB2F4B600701161 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42851F3B1BB2F4B600701161 /* ExtensionDelegate.swift */; };
 		42851F3E1BB2F4B600701161 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42851F3D1BB2F4B600701161 /* Assets.xcassets */; };
 		42851F421BB2F4B600701161 /* WatchConnectivitySampleSwift WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 42851F281BB2F4B500701161 /* WatchConnectivitySampleSwift WatchKit App.app */; };
+		429D94CE1BB3204900537A31 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 429D94CD1BB3204900537A31 /* README.md */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -156,6 +157,7 @@
 		42851F3B1BB2F4B600701161 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		42851F3D1BB2F4B600701161 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42851F3F1BB2F4B600701161 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		429D94CD1BB3204900537A31 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +195,7 @@
 		21D1B1331B47F8C6001A4781 = {
 			isa = PBXGroup;
 			children = (
+				429D94CD1BB3204900537A31 /* README.md */,
 				21D1B13E1B47F8C6001A4781 /* WatchConnectivitySample */,
 				21D1B1571B47F8C6001A4781 /* WatchConnectivitySample WatchKit App */,
 				21D1B1661B47F8C6001A4781 /* WatchConnectivitySample WatchKit Extension */,
@@ -532,6 +535,7 @@
 			files = (
 				21D1B1471B47F8C6001A4781 /* ViewController.m in Sources */,
 				21D1B1441B47F8C6001A4781 /* AppDelegate.m in Sources */,
+				429D94CE1BB3204900537A31 /* README.md in Sources */,
 				21D1B1411B47F8C6001A4781 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
